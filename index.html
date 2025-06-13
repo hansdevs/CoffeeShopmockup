@@ -3,15 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - Artisan Coffee & Treats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <!-- will be created soon -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Coffee Shop">
+                <span>Coffee Shop</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Rewards</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#" class="btn btn-primary">Order Now</a>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping" aria-label="Cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Crafted with love, <br>served with joy</h1>
+                <p>Experience our artisanal coffee and handcrafted treats in a cozy atmosphere that feels like home.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Order Online</a>
+                    <a href="#" class="btn btn-secondary">View Menu</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/hero-coffee.png" alt="Artisan Coffee Cup">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="/images/bean-icon.png" alt="Coffee Bean">
+                <h3>Ethically Sourced</h3>
+                <p>We partner directly with farmers for the finest beans.</p>
+            </div>
+            <div class="feature">
+                <img src="/images/cup-icon.png" alt="Coffee Cup">
+                <h3>Freshly Brewed</h3>
+                <p>Every cup is brewed to order for maximum flavor.</p>
+            </div>
+            <div class="feature">
+                <img src="/images/heart-icon.png" alt="Heart">
+                <h3>Community First</h3>
+                <p>Supporting local initiatives with every purchase.</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-image">
+                <img src="/images/coffee-shop-interior.png" alt="Coffee Shop Interior">
+            </div>
+            <div class="about-content">
+                <h2>Our Little Haven</h2>
+                <p>Coffee Shop was born from a simple idea: create a space where coffee isn't just served, but celebrated. Our cozy corners and warm lighting invite you to stay awhile, whether you're catching up with friends or finding your focus.</p>
+                <p>Unlike big chains, we infuse personality into everything we do—from our signature drinks to our handwritten notes. Every visit to Coffee Shop is meant to feel special, like coming home to your favorite mug.</p>
+                <a href="#" class="btn btn-secondary">Learn Our Story</a>
+            </div>
+        </section>
+
+        <section class="menu-preview">
+            <div class="section-header">
+                <h2>Featured Menu</h2>
+                <p>Try our seasonal favorites and signature classics</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/images/lavender-latte.png" alt="Lavender Honey Latte">
+                    </div>
+                    <h3>Lavender Honey Latte</h3>
+                    <p>Espresso, steamed milk, lavender syrup, honey drizzle</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$5.75</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/images/maple-cold-brew.png" alt="Maple Cinnamon Cold Brew">
+                    </div>
+                    <h3>Maple Cinnamon Cold Brew</h3>
+                    <p>House cold brew, maple syrup, cinnamon cream</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$6.25</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/images/chai-latte.png" alt="Spiced Chai Latte">
+                    </div>
+                    <h3>Spiced Chai Latte</h3>
+                    <p>House-made chai, steamed milk, star anise</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$5.50</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/images/matcha-latte.png" alt="Ceremonial Matcha Latte">
+                    </div>
+                    <h3>Ceremonial Matcha Latte</h3>
+                    <p>Premium matcha, oat milk, honey optional</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="#" class="btn btn-primary">View Full Menu</a>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>"The lavender honey latte is absolutely divine! This place has become my daily morning ritual."</p>
+                    <div class="testimonial-author">
+                        <img src="/images/customer-1.png" alt="Sarah M.">
+                        <span>Sarah M.</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>"Not only is the coffee exceptional, but the atmosphere makes me want to stay all day. Perfect for remote work!"</p>
+                    <div class="testimonial-author">
+                        <img src="/images/customer-2.png" alt="James L.">
+                        <span>James L.</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p>"Their seasonal drinks are always creative and delicious. A refreshing change from the usual coffee chains."</p>
+                    <div class="testimonial-author">
+                        <img src="/images/customer-3.png" alt="Emma T.">
+                        <span>Emma T.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev" aria-label="Previous testimonial">←</button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next" aria-label="Next testimonial">→</button>
+            </div>
+        </section>
+
+        <section class="locations">
+            <div class="section-header">
+                <h2>Find Us</h2>
+                <p>Visit one of our cozy locations</p>
+            </div>
+            <div class="location-cards">
+                <div class="location-card">
+                    <img src="/images/downtown-location.png" alt="Downtown Location">
+                    <h3>Downtown</h3>
+                    <p>123 Main Street</p>
+                    <p>Mon-Fri: 6am-8pm</p>
+                    <p>Sat-Sun: 7am-9pm</p>
+                    <a href="#" class="btn btn-outline">Get Directions</a>
+                </div>
+                <div class="location-card">
+                    <img src="/images/riverside-location.png" alt="Riverside Location">
+                    <h3>Example Street</h3>
+                    <p>213 Coffee Avenue</p>
+                    <p>Mon-Fri: 7am-7pm</p>
+                    <p>Sat-Sun: 8am-6pm</p>
+                    <a href="#" class="btn btn-outline">Get Directions</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join Our Community</h2>
+                <p>Sign up for our newsletter to receive updates on seasonal drinks, events, and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer>
-    
-</footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/logo.png" alt="Logo">
+                <h3>Coffee Shop</h3>
+                <p>Crafted with love, served with joy.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><img src="/images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="/images/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="/images/twitter-icon.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Tea</a></li>
+                        <li><a href="#">Pastries</a></li>
+                        <li><a href="#">Seasonal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coffee Shop. All rights reserved.</p>
+            <p>Made with ♥ for coffee lovers everywhere</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
